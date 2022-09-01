@@ -1,82 +1,107 @@
 <html>
-    <header>
-        <link rel="stylesheet" href="style/survey.css">
-        <h1 class="head" > <center>Follow Up Survey </center></h1>
-    </header>
+    <head>
+        <title>Responsive Survey</title>
+        <link rel="stylesheet" href="style/styles.css">
+       
+    </head>
 
 
     
     <body>
+        <h1 class="head" > <center>Follow Up Survey </center></h1>
+
         <form class="body">
 
-            <label for="date" ><b> When did you use our service?</b></label>
-            <label for="name" ><b>Name of product or service</b></label><br>
-            <input type="date" id="date">     
-            <input type="text" id="name">
-            <br>  
-            <h6>Date</h6>
+            <div><center><label class="question" for="date" ><b> When did you use our service?</b></label>
+            <label class="question" for="name" ><b>Name of product or service</b></label></center></div>
+            <center><input type="date" id="date">     
+            <input type="text" id="name"></center>
+            
+            <h6 class="date"><center>Date</h6></center>
             
         
-            <div class="question"><p><b>Overall, how satisfied are you with the product or service?</b></p></div>
+            <div class="flex center question"><span><b>Overall, how satisfied are you with the product or service?</b></span></div>
             
-                <div>
-                <input type="radio" id="1" name="satisfaction">
-                    <label for="1" >Very satisfied</label>
-                <input type="radio" id="2" name="satisfaction">
-                    <label for="2">Satisfied</label><br>
-                <input type="radio" id="3" name="satisfaction">
-                    <label for="3">Neutral</label>
-                <input type="radio"  id="4" name="satisfaction">
-                    <label for="4">Unsatisfied</label><br>
-                <input type="radio" id="5" name="satisfaction">
-                    <label for="5">Very unsatisfied</label>
-                <input type="radio" id="6" name="satisfaction">
-                    <label for="6">N/A</label><br>
+                <div class="flex space-evenly-flex edit2">
+                    <div class="flex edit">
+                        <div class="item"><input type="radio" id="1" name="satisfaction">
+                            <label for="1" >Very satisfied</label></div>
+                        <div class="item"><input type="radio" id="2" name="satisfaction">
+                            <label for="2">Satisfied</label></div>
+                    </div>
+                    <div class="flex edit">
+                        <div class="item"><input type="radio" id="3" name="satisfaction">
+                            <label for="3">Neutral</label></div>
+                        <div class="item"><input type="radio"  id="4" name="satisfaction">
+                            <label for="4">Unsatisfied</label></div>
+                    </div>
+                    <div class="flex edit">
+                        <div class="item"><input type="radio" id="5" name="satisfaction">
+                            <label for="5">Very unsatisfied</label></div>
+                        <div class="item"><input type="radio" id="6" name="satisfaction">
+                            <label for="6">N/A</label></div>
+                    </div>
                 </div>
             
+                
+            <div class="flex center question"><span><b>Did our product or service meet your expectations?</b></span></div>
 
-            <div class="question"><p><b>Did our product or service meet your expectations?</b></p></div>
-            
-                <input type="radio" id="yes" name="expectation">
-                    <label for="yes">Yes</label>
-                <input type="radio" id="no" name="expectation">
-                    <label for="no">No</label><br>
-            
+                <div class="flex space-evenly-flex edit2">
+                    <div class="flex edit">
+                        <div class="item"><input type="radio" id="yes" name="expectation">
+                            <label for="yes">Yes</label></div>
+                        <div class="item"><input type="radio" id="no" name="expectation" checked>
+                            <label for="no">No</label></div>
+                    </div>
+                </div>
+                
+            <div class="flex center question"><span><b>Would you recommend this product or service to a friend?</b></span></div>
+        
+                <div class="flex space-evenly-flex edit2">
+                    <div class="flex edit">
+                        <div class="item"><input type="radio" id="yes1" name="recommendation">
+                            <label for="yes1">Yes</label></div>
+                        <div class="item"><input type="radio" id="no1" name="recommendation" checked>
+                            <label for="no1">No</label></div>
+                    </div>
+                </div>
+             
+            <div class="flex center question"><span><b>What aspect of the product or service you most satisfied by?</b></span></div>
+        
+                <div class="flex space-evenly-flex edit2">
+                    <div class="flex edit">
+                        <div class="item"><input type="radio" id="quality" name="aspect">
+                            <label for="quality">Quality</label></div>
+                        <div class="item"><input type="radio" id="price" name="aspect">
+                            <label for="price">Price</label></div>
+                    </div>
+                    <div class="flex edit">
+                        <div class="item"><input type="radio" id="customer service" name="aspect">
+                            <label for="customer service">Customer service</label></div>
+                        <div class="item"><input type="radio" id="installation" name="aspect">
+                            <label for="installation">Installation or first use experience</label></div>
+                    </div>
+                </div>   
 
-            <div class="question"><p><b>Would you recommend this product or service to a friend?</b></p></div>
-            
-                <input type="radio" id="yes1" name="recommendation">
-                    <label for="yes1">Yes</label>
-                <input type="radio" id="no1" name="recommendation">
-                    <label for="no1">No</label><br>
-            
-
-            <div class="question"><p><b>What aspect of the product or service you most satisfied by?</b></p></div>
-            
-                <input type="radio" id="quality" name="aspect">
-                    <label for="quality">Quality</label>
-                <input type="radio" id="price" name="aspect">
-                    <label for="price">Price</label><br>
-                <input type="radio" id="customer service" name="aspect">
-                    <label for="customer service">Customer service</label>
-                <input type="radio" id="installation" name="aspect">
-                    <label for="installation">Installation or first use experience</label><br>
-            
-
-            <div class="question"><p><b>What aspect of the product or service you least satisfied by?</b></p></div>
+            <div class="flex center question"><span><b>What aspect of the product or service you least satisfied by?</b></span></div>
            
-                <input type="radio" id="quality1" name="aspect1">
-                    <label for="quality1">Quality</label>
-                <input type="radio" id="price1" name="aspect1">
-                    <label for="price1">Price</label><br>
-                <input type="radio" id="customer service1" name="aspect1">
-                    <label for="customer service1">Customer service</label>
-                <input type="radio" id="installation1" name="aspect1">
-                    <label for="installation1">Installation or first use experience</label><br>
-           
-            
-            <div class="question"><p><b>Additional comments:</b></div></p><br>
-                <textarea class="textarea" width="100%" placeholder="type here..."></textarea>
+                <div class="flex space-evenly-flex edit2">
+                    <div class="flex edit">
+
+                        <div class="item"><input type="radio" id="quality1" name="aspect1">
+                            <label for="quality1">Quality</label></div>
+                        <div class="item"><input type="radio" id="price1" name="aspect1">
+                            <label for="price1">Price</label></div>
+                    </div>
+                    <div class="flex edit">
+                        <div class="item"><input type="radio" id="customer service1" name="aspect1">
+                            <label for="customer service1">Customer service</label></div>
+                        <div class="item"><input type="radio" id="installation1" name="aspect1">
+                            <label for="installation1">Installation or first use experience</label></div>
+                    </div>
+                </div>
+                <div class="flex center question"><span><b>Additional comments</b></span></div>
+                <center><textarea class="textarea" width="100%" placeholder="type here..."></textarea></center>
 
             <br>
             <center><button class="submit">Submit</button> </center>

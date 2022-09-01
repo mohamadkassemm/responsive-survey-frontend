@@ -1,0 +1,53 @@
+body{
+    
+    background-color:gray;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+form{
+    background-color: lightgray;
+    margin-left: 10%;
+}
+
+h1{
+    color: brown;
+    background-color: white;
+    margin-left: 10%;
+    
+}
+.date{
+    margin-right: 285px;
+}
+
+.flex{
+    
+    display: flex;
+    
+}
+.center{
+    justify-content:center;
+}
+.space-evenly-flex{
+    
+    justify-content: space-evenly;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+.item{
+    color: brown;
+    width: 200px;
+    height: 20px;
+    margin: 5px;
+}
+.edit{
+   flex-direction: row;
+   
+}
+.edit2{
+    flex-direction: column;
+}
+.question{
+    margin-top: 20px;
+    color: brown;
+}
